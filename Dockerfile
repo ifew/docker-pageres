@@ -44,6 +44,9 @@ lsb-release \
 wget \
 xdg-utils
 
+# install thai font and other front
+RUN apt-get install -y fonts-thai-tlwg-ttf xfonts-utils xfonts-intl-asian fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf
+
 RUN add-apt-repository ppa:saiarcot895/chromium-beta
 RUN apt-get update
 RUN apt install -y chromium-browser

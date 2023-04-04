@@ -1,5 +1,8 @@
 # Pageres in Docker
 
+Website capture screen with Node JS via Puppeteer and Chromium headless. 
+Don't worries about OS. it's can use anywhere
+
 ## Pull docker image ready to use
 
 ```
@@ -9,7 +12,7 @@ $ docker pull ifew/docker-pageres
 ## Runing 
 
 ```
-docker run --rm -v `pwd`:/pageres/output --security-opt seccomp=chrome.json ifew/docker-pageres "https://myifew.com" 1920x3000 --delay=10
+docker run --rm -v `pwd`:/pageres/output --security-opt seccomp=chrome.json ifew/docker-pageres "https://myifew.com" 1920x8000 --delay=15
 ```
 
 ## Building by your self
